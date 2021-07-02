@@ -1,14 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <v-img id="bg" src="@/assets/background.jpg"></v-img>
     <router-view/>
   </div>
 </template>
 
 <style>
+#bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 45px;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
