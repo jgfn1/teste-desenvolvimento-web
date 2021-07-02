@@ -7,11 +7,11 @@ import {Entity, model, property} from '@loopback/repository';
 })
 export class Pokemon extends Entity {
   @property({
-    type: 'string',
+    type: 'number',
     id: true,
     generated: true,
   })
-  id?: string;
+  id?: number;
 
 
   constructor(data?: Partial<Pokemon>) {
